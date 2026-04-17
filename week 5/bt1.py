@@ -14,7 +14,7 @@ class HangHoa:
     @san_pham.setter
     def san_pham(self, value):
         if not value or value.strip() == "":
-            raise ValueError("Tên sản phẩm không được để trống!")
+            print("Tên sản phẩm không được để trống!")
         self.__san_pham = value
 
     @property
@@ -24,7 +24,7 @@ class HangHoa:
     @ma_sp.setter
     def ma_sp(self, value):
         if not value or value.strip() == "":
-            raise ValueError("Mã sản phẩm không được để trống!")
+            print("Mã sản phẩm không được để trống!")
         self.__ma_sp = value
 
     @property
@@ -34,7 +34,7 @@ class HangHoa:
     @so_luong.setter
     def so_luong(self, value):
         if value < 0:
-            raise ValueError("Số lượng không được âm!")
+            print("Số lượng không được âm!")
         self.__so_luong = value
 
     @property
